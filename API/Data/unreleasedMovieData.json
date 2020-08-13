@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Freaks - You're One of Us",
+        "news": "On Netflix Sept 2",
+        "description": "What if for your entire life you had superpowers you weren't aware of? Wendy (Cornelia Gröschel), a young working class mom, realizes that years of medication have suppressed her latent supernatural powers. She meets a stranger, Marek (Wotan Wilke Möhring), with the same background, and finds out that her co-worker, Elmar (Tim Oliver Schultz), is also similarly gifted. Question is: what will she do with her new powers?",
+        "genre": "Drama, Fantasy, Sci-Fi",
+        "displayImage": "https://m.media-amazon.com/images/M/MV5BMjdjMDY3OGYtZTQ3ZS00NTc5LWIxOTAtYWM0YmRmYmE0NDUwXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_QL40_UX352_CR0,1,352,521_.jpg",
+        "thumbNail": "https://m.media-amazon.com/images/M/MV5BYWU0M2E4NWEtMGIyNi00YjJlLTgyYjctMTUyM2Y0NzNkNDViXkEyXkFqcGdeQXZ3ZXNsZXk@._V1_QL40_UX1000_CR0,0,1000,563_.jpg",
+        "releaseInfo": "2020-09-02",
+        "duration": "1h 32min"
+    },
+    {
+        "name": "Mulan",
+        "news": "Coming Sept 4 on Disney +",
+        "description": "A young Chinese maiden disguises herself as a male warrior in order to save her father. A live-action feature film based on Disney's 'Mulan.'",
+        "genre": "Action, Adventure, Drama",
+        "pgRating": "PG-13",
+        "displayImage": "https://m.media-amazon.com/images/M/MV5BMjFlZjZkMTYtODM2Zi00OTM4LWIwYTktOTFjMmQzZDEzZDc4XkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_QL40_UX352_CR0,0,352,521_.jpg",
+        "thumbNail": "https://m.media-amazon.com/images/M/MV5BNjQyYjE1NjYtMjAxNy00OGRlLTk0MjktYTAyODQwMzQwYzJhXkEyXkFqcGdeQXZ3ZXNsZXk@._V1_QL40_UY563_CR177,0,1000,563_.jpg",
+        "releaseInfo": "2020-09-04",
+        "duration": "1h 55min"
+    },
+    {
+        "name": "The Devil All The Time",
+        "news": "Premiers on Netflix Sept 16",
+        "description": "Some people are just born to be buried. In Knockemstiff, Ohio and its neighboring backwoods, sinister characters, an unholy preacher (Robert Pattinson), twisted couple (Jason Clarke and Riley Keough), and crooked sheriff (Sebastian Stan), converge around young Arvin Russell (Tom Holland) as he fights the evil forces that threaten him and his family. Spanning the time between World War II and the Vietnam war, director Antonio Campos THE DEVIL ALL THE TIME renders a seductive and horrific landscape that pits the just against the corrupted. Co-starring Bill Skarsgård, Mia Wasikowska, Harry Melling, Haley Bennett, and Pokey LaFarge, this suspenseful, finely-woven tale is adapted from Donald Ray Pollock's award-winning novel.",
+        "genre": "Drama, Thriller",
+        "pgRating": "R",
+        "displayImage": "https://m.media-amazon.com/images/M/MV5BMzIxZDk2NmEtYWUyZS00NjJiLTlmOWYtNzI5YjgzNmViNDZmXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_QL40_UX352_CR0,1,352,521_.jpg",
+        "thumbNail": "https://m.media-amazon.com/images/M/MV5BZTRjZGMzYzItZTkyOC00NzY5LTk5YzAtZDc0M2UzNzgxNmMxXkEyXkFqcGdeQXNuZXNodQ@@._V1_QL40_UX1000_CR0,0,1000,563_.jpg",
+        "releaseInfo": "2020-09-16",
+        "duration": "2h 18min"
+    }
+]

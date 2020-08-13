@@ -1,0 +1,11 @@
+<carousel [isAnimated]="true">
+  <slide *ngFor="let movie of movies">
+    <div>
+      <img src="{{movie.thumbNail}}" alt="first slide" style="display: block; width: 100%;">
+      <div class="carousel-caption d-none d-md-block">
+        <h4 class="text-white">{{movie.name}}</h4>
+        <p>{{movie.news}}</p>
+      </div>
+    </div>
+  </slide>
+</carousel>
