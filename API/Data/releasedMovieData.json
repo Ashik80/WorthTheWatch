@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Dil Bechara",
+        "description": "The emotional journey of two hopelessly in love youngsters, a young girl, Kizie, suffering from cancer, and a boy, Manny, whom she meets at a support group.",
+        "genre": "Comedy, Drama, Romance",
+        "thumbNail": "https://m.media-amazon.com/images/M/MV5BNmI0MTliMTAtMmJhNC00NTJmLTllMzQtMDI3NzA1ODMyZWI1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY207_CR13,0,140,207_.jpg",
+        "releaseInfo": "2020-07-24",
+        "duration": "1h 41min",
+        "rating": 9.0
+    },
+    {
+        "name": "The Umbrella Academy",
+        "description": "A family of former child heroes, now grown apart, must reunite to continue to protect the world.",
+        "genre": "Action, Adventure, Comedy",
+        "pgRating": "TV-14",
+        "thumbNail": "https://m.media-amazon.com/images/M/MV5BNzA5MjkwYzMtNGY2MS00YWRjLThkNTktOTNmMzdlZjE3Y2IxXkEyXkFqcGdeQXVyMjkwMzMxODg@._V1_UY207_CR1,0,140,207_.jpg",
+        "releaseInfo": "2019-02-15",
+        "duration": "1h",
+        "rating": 8.0
+    },
+    {
+        "name": "Knives Out",
+        "description": "A detective investigates the death of a patriarch of an eccentric, combative family.",
+        "genre": "Comedy, Crime, Drama",
+        "pgRating": "PG-13",
+        "thumbNail": "https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_UX140_CR0,0,140,207_.jpg",
+        "releaseInfo": "2019-11-27",
+        "duration": "2h 10min",
+        "rating": 7.9
+    },
+    {
+        "name": "Joker",
+        "description": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
+        "genre": "Crime, Drama, Thriller",
+        "pgRating": "R",
+        "thumbNail": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX140_CR0,0,140,207_.jpg",
+        "releaseInfo": "2019-10-04",
+        "duration": "2h 2min",
+        "rating": 8.5
+    },
+    {
+        "name": "Dark",
+        "description": "A family saga with a supernatural twist, set in a German town, where the disappearance of two young children exposes the relationships among four families.",
+        "genre": "Crime, Drama, Mystery",
+        "pgRating": "TV-MA",
+        "thumbNail": "https://m.media-amazon.com/images/M/MV5BZmY2YzU4NDktODIxYi00YWIyLWIzYTctODBkYzYzZjc0ODdlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX140_CR0,0,140,207_.jpg",
+        "releaseInfo": "2017-12-01",
+        "duration": "1h",
+        "rating": 8.8
+    }
+]

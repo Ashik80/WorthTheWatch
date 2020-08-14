@@ -1,6 +1,6 @@
-import { UnreleasedMovie } from './../_models/movie';
-import { MovieService } from './../_services/movie.service';
+import { UnreleasedMovie, ReleasedMovie } from './../_models/movie';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,18 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   movies: UnreleasedMovie[];
+  releasedMovies: ReleasedMovie[];
 
-  constructor(private movieService: MovieService) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.getMovies();
-  }
-
-  getMovies(): void {
-    this.movieService.getUnreleasedMovies().subscribe(data => {
-      this.movies = data;
-    }, error => {
-      console.log(error);
+    this.route.data.subscribe(data => {
+      this.movies = data.movies;
+      this.releasedMovies = data.releasedMovies;
     });
   }
 

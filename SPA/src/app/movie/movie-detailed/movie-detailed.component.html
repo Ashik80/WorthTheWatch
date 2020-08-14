@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="col-lg-9 col-md-12">
+    <div class="card text-white bg-dark mb-3">
+      <div class="card-body">
+        <h3 class="card-title">{{ movie.name }}</h3>
+        <p>
+          <span *ngIf="movie.pgRating !== null"><small>{{ movie.pgRating }}</small> | </span>
+          <small>{{ movie.duration }}</small> | <small>{{ movie.genre }}</small> |
+          <small>{{ movie.releaseInfo }}</small>
+        </p>
+        <div class="row">
+          <div class="col-4">
+            <img src="{{ movie.thumbNail }}" alt="" style="width: 100%;" />
+          </div>
+          <iframe width="515" height="345" src="https://www.youtube.com/embed/GODAlxW5Pes" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-text mt-2">{{movie.description}}</div>
+      </div>
+    </div>
+  </div>
+</div>

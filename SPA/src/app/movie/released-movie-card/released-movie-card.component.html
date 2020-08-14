@@ -1,0 +1,14 @@
+<a style="text-decoration: none;" [routerLink]="['/movie', movie.id]">
+  <div class="card text-white bg-dark h-100 border-0">
+    <img src="{{movie.thumbNail}}" class="card-img-top" alt="">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text text-muted">
+        <fa-icon [icon]="faStar" style="color: yellow;"></fa-icon> {{movie.rating.toFixed(1)}}
+      </p>
+      <h5 class="card-title">{{movie.name}}</h5>
+      <button class="btn btn-warning btn-block mt-auto">
+        <fa-icon [icon]="faPlus"></fa-icon> Watchlist
+      </button>
+    </div>
+  </div>
+</a>

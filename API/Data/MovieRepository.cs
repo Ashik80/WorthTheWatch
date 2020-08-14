@@ -13,7 +13,7 @@ namespace API.Data
             this.context = context;
         }
 
-        public async Task<Movie> GetMovie(int id)
+        public async Task<UnreleasedMovie> GetUnreleasedMovie(int id)
         {
             var movie = await context.UnreleasedMovie.FirstOrDefaultAsync(x => x.Id == id);
 
@@ -22,9 +22,21 @@ namespace API.Data
             return movie;
         }
 
-        public async Task<IEnumerable<Movie>> GetMovies()
+        public async Task<IEnumerable<UnreleasedMovie>> GetUnreleasedMovies()
         {
             return await context.UnreleasedMovie.ToListAsync();
+        }
+
+        public async Task<ReleasedMovie> GetReleasedMovie(int id)
+        {
+            var movie = await context.ReleasedMovie.FirstOrDefaultAsync(x => x.Id == id);
+
+            return movie;
+        }
+
+        public async Task<IEnumerable<ReleasedMovie>> GetReleasedMovies()
+        {
+            return await context.ReleasedMovie.ToListAsync();
         }
     }
 }

@@ -25,9 +25,6 @@ namespace API.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("DisplayImage")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Duration")
                         .HasColumnType("TEXT");
 

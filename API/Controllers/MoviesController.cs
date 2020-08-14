@@ -17,17 +17,32 @@ namespace API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetUnreleasedMovies()
         {
-            var movies = await repo.GetMovies();
+            var movies = await repo.GetUnreleasedMovies();
             return Ok(movies);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUnreleasedMovie(int id)
         {
-            var movie = await repo.GetMovie(id);
+            var movie = await repo.GetUnreleasedMovie(id);
 
             if (movie == null) return NotFound();
 
+            return Ok(movie);
+        }
+
+        [HttpGet("released")]
+        public async Task<IActionResult> GetReleasedMovies()
+        {
+            var movies = await repo.GetReleasedMovies();
+            return Ok(movies);
+        }
+
+        [HttpGet("released/{id}")]
+        public async Task<IActionResult> GetReleasedMovie(int id)
+        {
+            var movie = await repo.GetReleasedMovie(id);
+            if(movie == null) return NotFound();
             return Ok(movie);
         }
     }

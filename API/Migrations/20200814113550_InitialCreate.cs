@@ -17,7 +17,6 @@ namespace API.Migrations
                     Description = table.Column<string>(nullable: true),
                     Genre = table.Column<string>(nullable: true),
                     ThumbNail = table.Column<string>(nullable: true),
-                    DisplayImage = table.Column<string>(nullable: true),
                     PgRating = table.Column<string>(nullable: true),
                     Duration = table.Column<string>(nullable: true),
                     ReleaseInfo = table.Column<DateTime>(nullable: false),
@@ -39,11 +38,11 @@ namespace API.Migrations
                     Description = table.Column<string>(nullable: true),
                     Genre = table.Column<string>(nullable: true),
                     ThumbNail = table.Column<string>(nullable: true),
-                    DisplayImage = table.Column<string>(nullable: true),
                     PgRating = table.Column<string>(nullable: true),
                     Duration = table.Column<string>(nullable: true),
                     ReleaseInfo = table.Column<DateTime>(nullable: false),
                     TrailerUrl = table.Column<string>(nullable: true),
+                    DisplayImage = table.Column<string>(nullable: true),
                     News = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

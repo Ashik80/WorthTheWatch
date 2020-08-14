@@ -26,7 +26,7 @@ namespace API
                 {
                     var context = services.GetRequiredService<DataContext>();
                     context.Database.Migrate();
-                    Seed.SeedUnreleasedMovie(context);
+                    Seed.SeedMovie(context);
                 }
                 catch (Exception ex)
                 {

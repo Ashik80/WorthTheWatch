@@ -4,7 +4,6 @@ export interface Movie {
     description: string;
     genre: string;
     thumbNail: string;
-    displayImage: string;
     pgRating?: string;
     duration: string;
     releaseInfo: Date;
@@ -12,5 +11,10 @@ export interface Movie {
 }
 
 export interface UnreleasedMovie extends Movie {
+    displayImage: string;
     news: string;
+}
+
+export interface ReleasedMovie extends Movie {
+    rating: number;
 }

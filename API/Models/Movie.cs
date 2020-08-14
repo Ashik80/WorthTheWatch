@@ -9,7 +9,6 @@ namespace API.Models
         public string Description { get; set; }
         public string Genre { get; set; }
         public string ThumbNail { get; set; }
-        public string DisplayImage { get; set; }
         public string PgRating { get; set; }
         public string Duration { get; set; }
         public DateTime ReleaseInfo { get; set; }

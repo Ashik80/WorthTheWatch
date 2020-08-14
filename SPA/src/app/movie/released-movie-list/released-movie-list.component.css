@@ -1,0 +1,8 @@
+.fan-favorite-icon {
+    transition: all 300ms;
+}
+
+.fan-card-header:hover .fan-favorite-icon {
+    color: #F0AD4E;
+    transition: all 300ms;
+}

@@ -7,7 +7,7 @@ namespace API.Data
 {
     public class Seed
     {
-        public static void SeedUnreleasedMovie(DataContext context)
+        public static void SeedMovie(DataContext context)
         {
             if (!context.UnreleasedMovie.Any())
             {
@@ -15,6 +15,15 @@ namespace API.Data
                 var uMovies = JsonConvert.DeserializeObject<List<UnreleasedMovie>>(unreleasedData);
 
                 context.AddRange(uMovies);
+                context.SaveChanges();
+            }
+
+            if (!context.ReleasedMovie.Any())
+            {
+                var releasedData = System.IO.File.ReadAllText("Data/releasedMovieData.json");
+                var rMovies = JsonConvert.DeserializeObject<List<ReleasedMovie>>(releasedData);
+
+                context.AddRange(rMovies);
                 context.SaveChanges();
             }
         }

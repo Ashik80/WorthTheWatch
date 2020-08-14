@@ -14,8 +14,4 @@ export class MovieListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  moviesArray(n: number): UnreleasedMovie[] {
-    return Array(2);
-  }
-
 }
