@@ -1,0 +1,25 @@
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <h2 class="text-warning">Sign in</h2>
+  <form style="width: 50%;" class="text-white">
+    <div class="form-group">
+      <label for="displayName">Display Name</label>
+      <input type="email" class="form-control" id="displayName">
+    </div>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password">
+    </div>
+    <div class="form-group">
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" class="form-control" id="confirm-password">
+    </div>
+    <div class="button-group">
+      <button type="submit" class="btn btn-warning" style="width: 50%;">Submit</button>
+      <button class="btn btn-primary" style="width: 50%;" (click)="deactivateRegisterMode()">Cancel</button>
+    </div>
+  </form>
+</div>

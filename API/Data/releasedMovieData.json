@@ -6,6 +6,7 @@
         "thumbNail": "https://m.media-amazon.com/images/M/MV5BNmI0MTliMTAtMmJhNC00NTJmLTllMzQtMDI3NzA1ODMyZWI1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY207_CR13,0,140,207_.jpg",
         "releaseInfo": "2020-07-24",
         "duration": "1h 41min",
+        "trailerUrl": "https://www.youtube.com/embed/GODAlxW5Pes",
         "rating": 9.0
     },
     {
@@ -16,6 +17,7 @@
         "thumbNail": "https://m.media-amazon.com/images/M/MV5BNzA5MjkwYzMtNGY2MS00YWRjLThkNTktOTNmMzdlZjE3Y2IxXkEyXkFqcGdeQXVyMjkwMzMxODg@._V1_UY207_CR1,0,140,207_.jpg",
         "releaseInfo": "2019-02-15",
         "duration": "1h",
+        "trailerUrl": "https://www.youtube.com/embed/0DAmWHxeoKw",
         "rating": 8.0
     },
     {
@@ -26,6 +28,7 @@
         "thumbNail": "https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_UX140_CR0,0,140,207_.jpg",
         "releaseInfo": "2019-11-27",
         "duration": "2h 10min",
+        "trailerUrl": "https://www.youtube.com/embed/qGqiHJTsRkQ",
         "rating": 7.9
     },
     {
@@ -36,6 +39,7 @@
         "thumbNail": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX140_CR0,0,140,207_.jpg",
         "releaseInfo": "2019-10-04",
         "duration": "2h 2min",
+        "trailerUrl": "https://www.youtube.com/embed/-_DJEzZk2pc",
         "rating": 8.5
     },
     {
@@ -46,6 +50,7 @@
         "thumbNail": "https://m.media-amazon.com/images/M/MV5BZmY2YzU4NDktODIxYi00YWIyLWIzYTctODBkYzYzZjc0ODdlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX140_CR0,0,140,207_.jpg",
         "releaseInfo": "2017-12-01",
         "duration": "1h",
+        "trailerUrl": "https://www.youtube.com/embed/rrwycJ08PSA",
         "rating": 8.8
     }
 ]

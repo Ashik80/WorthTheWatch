@@ -1,0 +1,11 @@
+@media only screen and (min-width: 578px) {
+    .search-bar {
+        width: 200px;
+        transition: all 0.5s;
+    }
+
+    .search-bar:focus {
+        width: 300px;
+        transition: all 0.5s;
+    }
+}

@@ -1,0 +1,22 @@
+<div class="container sign-up mt-3">
+  <div class="card bg-dark sign-up-card">
+    <div class="row" *ngIf="!registerMode">
+      <div class="col-md-6 col-sm-12">
+        <app-signin-form></app-signin-form>
+        <p class="create-account text-center" (click)="activateRegisterMode()">Create a New Account</p>
+      </div>
+      <div class="col-md-6 col-sm-12 text-white">
+        <h2 class="mb-3 text-warning">Benefits of your free WTW account</h2>
+        <p style="font-weight: 900; margin-bottom: 0;">Your Watchlist</p>
+        <p class="text-muted">Track everything you want to watch and receive e-mail when movies open in theaters.</p>
+        <p style="font-weight: 900; margin-bottom: 0;">Your Ratingst</p>
+        <p class="text-muted">Rate and remember everything you've seen.</p>
+        <p style="font-weight: 900; margin-bottom: 0;">Contribute to WTW</p>
+        <p class="text-muted">Add data that will be seen by millions of people and get cool badges.</p>
+      </div>
+  </div>
+  <div *ngIf="registerMode">
+    <app-signup-form (registerMode)="deactivateRegisterMode($event)"></app-signup-form>
+  </div>
+  </div>
+</div>

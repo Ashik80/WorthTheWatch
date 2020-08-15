@@ -1,10 +1,14 @@
 <div class="card text-white bg-primary mb-3">
   <div class="card-body row">
     <div class="col-4">
-      <img src="{{movie.displayImage}}" alt="" width="100%">
+      <a [routerLink]="['/unreleased-movie', movie.id]">
+        <img [src]="movie.thumbNail" class="unreleased-movie-img" alt="" width="100%">
+      </a>
     </div>
     <div class="col-8">
-      <h4 class="card-title">{{movie.name}}</h4>
+      <a style="text-decoration: none;" [routerLink]="['/unreleased-movie', movie.id]">
+        <h4 class="card-title unreleased-movie-name">{{movie.name}}</h4>
+      </a>
       <p class="card-text">{{movie.news}}</p>
     </div>
   </div>

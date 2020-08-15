@@ -1,0 +1,18 @@
+.released-movie-name {
+    color: white;
+    transition: all 300ms;
+}
+
+.released-movie-name:hover {
+    color: #F0AD4E;
+    transition: all 300ms;
+}
+
+.released-movie-card {
+    transition: all 1s;
+}
+
+.released-movie-card:hover {
+    transform: scale(1.05);
+    transition: all 1s;
+}

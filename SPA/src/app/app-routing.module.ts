@@ -1,6 +1,9 @@
+import { SignupPageComponent } from './signup-page/signup-page.component';
+import { UnreleasedMoviesComponent } from './unreleased-movie/unreleased-movies/unreleased-movies.component';
+import { UnreleasedMovieDetailedResolver } from './_resolvers/unreleased-movie-detailed.resolver';
 import { MovieDetailedComponent } from './movie/movie-detailed/movie-detailed.component';
 import { ReleasedMovieListResolver } from './_resolvers/released-movie-list.resolver';
-import { MovieListResolver } from './_resolvers/movie-list.resolver';
+import { UnreleasedMovieListResolver } from './_resolvers/unreleased-movie-list.resolver';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -10,7 +13,7 @@ const routes: Routes = [
   {
     path: '', component: HomeComponent,
     resolve: {
-      movies: MovieListResolver,
+      movies: UnreleasedMovieListResolver,
       releasedMovies: ReleasedMovieListResolver
     }
   },
@@ -19,6 +22,19 @@ const routes: Routes = [
     resolve: {
       movie: MovieDetailedResolver
     }
+  },
+  {
+    path: 'unreleased-movies', component: UnreleasedMoviesComponent,
+    resolve: {movies: UnreleasedMovieListResolver}
+  },
+  {
+    path: 'unreleased-movie/:id', component: MovieDetailedComponent,
+    resolve: {
+      movie: UnreleasedMovieDetailedResolver
+    }
+  },
+  {
+    path: 'sign-in', component: SignupPageComponent
   },
   {
     path: '**', redirectTo: '', pathMatch: 'full'

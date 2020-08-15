@@ -1,0 +1,8 @@
+.unreleased-trailer-card {
+    transition: all 1s;
+}
+
+.unreleased-trailer-card:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}

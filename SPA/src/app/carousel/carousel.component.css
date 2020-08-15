@@ -1,0 +1,10 @@
+.carousel-img img {
+    filter: brightness(100%);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.carousel-img:hover img {
+    filter: brightness(80%);
+    transition: all 0.5s;
+}

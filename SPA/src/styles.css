@@ -1,7 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import '../node_modules/bootswatch/dist/lux/bootstrap.min.css';
+@import './assets/css/all.min.css';
 
 body {
     background-color: black;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+.custom-container {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }

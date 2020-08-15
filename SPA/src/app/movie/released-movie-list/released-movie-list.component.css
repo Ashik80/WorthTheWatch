@@ -1,8 +1,11 @@
-.fan-favorite-icon {
+.fan-card-header {
+    color: white;
     transition: all 300ms;
+    cursor: pointer;
 }
 
-.fan-card-header:hover .fan-favorite-icon {
+.fan-card-header:hover {
     color: #F0AD4E;
+    transform: translate(10px);
     transition: all 300ms;
 }

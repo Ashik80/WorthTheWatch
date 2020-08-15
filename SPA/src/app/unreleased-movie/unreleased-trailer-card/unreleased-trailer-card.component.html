@@ -1,0 +1,8 @@
+<a style="text-decoration: none;" [routerLink]="['/unreleased-movie', movie.id]">
+  <div class="card text-white bg-dark h-100 border-0 unreleased-trailer-card">
+    <img [src]="movie.thumbNail" class="card-img-top" alt="">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">{{ movie.name }}</h5>
+    </div>
+  </div>
+</a>

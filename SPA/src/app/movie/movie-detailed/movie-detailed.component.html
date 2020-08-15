@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-2 movie-detailed">
   <div class="col-lg-9 col-md-12">
     <div class="card text-white bg-dark mb-3">
       <div class="card-body">
@@ -6,13 +6,13 @@
         <p>
           <span *ngIf="movie.pgRating !== null"><small>{{ movie.pgRating }}</small> | </span>
           <small>{{ movie.duration }}</small> | <small>{{ movie.genre }}</small> |
-          <small>{{ movie.releaseInfo }}</small>
+          <small>{{ dateFormat() }}</small>
         </p>
         <div class="row">
           <div class="col-4">
-            <img src="{{ movie.thumbNail }}" alt="" style="width: 100%;" />
+            <img [src]="movie.thumbNail" alt="" style="width: 100%;" />
           </div>
-          <iframe width="515" height="345" src="https://www.youtube.com/embed/GODAlxW5Pes" frameborder="0"
+          <iframe width="515" height="345" [src]="trailerUrl()" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="card-text mt-2">{{movie.description}}</div>

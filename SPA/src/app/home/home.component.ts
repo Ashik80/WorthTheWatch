@@ -20,4 +20,8 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  slicedMovies(): UnreleasedMovie[] {
+    return this.movies.slice(0, 2);
+  }
+
 }

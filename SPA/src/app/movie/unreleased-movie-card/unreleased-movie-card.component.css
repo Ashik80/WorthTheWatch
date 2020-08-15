@@ -1,0 +1,21 @@
+.unreleased-movie-name {
+    color: white;
+    transition: all 500ms;
+    width: fit-content;
+}
+
+.unreleased-movie-name:hover {
+    color: #F0AD4E;
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+
+.unreleased-movie-img {
+    transform: scale(1, 1);
+    transition: all 0.8s;
+}
+
+.unreleased-movie-img:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.8s;
+}

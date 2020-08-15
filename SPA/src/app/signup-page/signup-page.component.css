@@ -1,0 +1,20 @@
+.sign-up {
+    margin-bottom: 200px;
+}
+
+.sign-up-card {
+    padding: 80px 0;
+}
+
+.create-account {
+    cursor: pointer;
+    color: white;
+    transition: all 500ms;
+    text-decoration: underline;
+}
+
+.create-account:hover {
+    color: #f0ad4e;
+    transform: scale(1.1);
+    transition: all 500ms;
+}

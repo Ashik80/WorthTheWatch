@@ -1,0 +1,8 @@
+<div class="custom-container mt-4 unreleased-movies">
+  <h2 class="text-warning">Latest Movie/TV trailers</h2>
+  <div class="row mt-5">
+    <div class="col-lg-2 col-md-3" *ngFor="let movie of movies">
+      <app-unreleased-trailer-card [movie]="movie"></app-unreleased-trailer-card>
+    </div>
+  </div>
+</div>
