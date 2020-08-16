@@ -2,12 +2,19 @@
   <div class="col-lg-9 col-md-12">
     <div class="card text-white bg-dark mb-3">
       <div class="card-body">
-        <h3 class="card-title">{{ movie.name }}</h3>
-        <p>
-          <span *ngIf="movie.pgRating !== null"><small>{{ movie.pgRating }}</small> | </span>
-          <small>{{ movie.duration }}</small> | <small>{{ movie.genre }}</small> |
-          <small>{{ dateFormat() }}</small>
-        </p>
+        <div class="d-flex align-items-center">
+          <div>
+            <h3 class="card-title">{{ movie.name }}</h3>
+            <p>
+              <span *ngIf="movie.pgRating !== null"><small>{{ movie.pgRating }}</small> | </span>
+              <small>{{ movie.duration }}</small> | <small>{{ movie.genre }}</small> | <small>{{ dateFormat() }}</small>
+            </p>
+          </div>
+          <h1 class="ml-auto text-white" *ngIf="movie.rating">
+            <i class="fas fa-star" style="color: yellow;"></i>
+            {{movie.rating}}
+          </h1>
+        </div>
         <div class="row">
           <div class="col-4">
             <img [src]="movie.thumbNail" alt="" style="width: 100%;" />

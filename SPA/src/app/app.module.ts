@@ -1,3 +1,4 @@
+import { ErrorInterceptorProvider } from './_guards/error.interceptor';
 import { SignupFormComponent } from './signup-page/signup-form/signup-form.component';
 import { SigninFormComponent } from './signup-page/signin-form/signin-form.component';
 import { UnreleasedTrailerCardComponent } from './unreleased-movie/unreleased-trailer-card/unreleased-trailer-card.component';
@@ -14,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +28,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UnreleasedMoviesComponent } from './unreleased-movie/unreleased-movies/unreleased-movies.component';
 import { FooterComponent } from './footer/footer.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
+import { JwtModule } from '@auth0/angular-jwt';
+import { getToken } from './_services/user.service';
 
 @NgModule({
   declarations: [
@@ -53,12 +57,20 @@ import { SignupPageComponent } from './signup-page/signup-page.component';
     BsDropdownModule.forRoot(),
     CollapseModule.forRoot(),
     CarouselModule.forRoot(),
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
+    // JwtModule.forRoot({
+    //   config: {
+    //     tokenGetter: getToken,
+    //     allowedDomains: ['localhost:5000']
+    //   }
+    // })
   ],
   providers: [
     MovieService,
     MovieDetailedResolver,
-    UnreleasedMovieDetailedResolver
+    UnreleasedMovieDetailedResolver,
+    ErrorInterceptorProvider
   ],
   bootstrap: [AppComponent]
 })
