@@ -1,0 +1,26 @@
+.watchlist {
+    margin-bottom: 200px;
+}
+
+.movie-name {
+    color: white;
+    transition: all 300ms;
+    margin: 0
+}
+
+.movie-name:hover {
+    color: #f0ad4e;
+    transition: all 300ms;
+}
+
+.watchlist-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.transparent-btn {
+    background-color: transparent;
+    border: none;
+}

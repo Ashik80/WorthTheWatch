@@ -7,6 +7,7 @@ using API.Data;
 using API.Dtos;
 using API.Models;
 using API.Security;
+using AutoMapper;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -71,9 +72,13 @@ namespace API
                 };
             });
 
+            services.AddAutoMapper(typeof(MovieRepository).Assembly);
+
             services.AddScoped<IMovieRepository, MovieRepository>();
 
             services.AddScoped<IUserRepository, UserRepository>();
+
+            services.AddScoped<IWatchListRepository, WatchListRepository>();
 
             services.AddScoped<IJwtGenerator, JwtGenerator>();
         }

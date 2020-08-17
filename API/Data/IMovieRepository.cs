@@ -6,9 +6,9 @@ namespace API.Data
 {
     public interface IMovieRepository
     {
-        Task<IEnumerable<UnreleasedMovie>> GetUnreleasedMovies();
+        Task<List<UnreleasedMovie>> GetUnreleasedMovies();
         Task<UnreleasedMovie> GetUnreleasedMovie(int id);
-        Task<IEnumerable<ReleasedMovie>> GetReleasedMovies();
+        Task<List<ReleasedMovie>> GetReleasedMovies();
         Task<ReleasedMovie> GetReleasedMovie(int id);
     }
 }

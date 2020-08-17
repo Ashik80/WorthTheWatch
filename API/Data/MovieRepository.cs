@@ -22,7 +22,7 @@ namespace API.Data
             return movie;
         }
 
-        public async Task<IEnumerable<UnreleasedMovie>> GetUnreleasedMovies()
+        public async Task<List<UnreleasedMovie>> GetUnreleasedMovies()
         {
             return await context.UnreleasedMovie.ToListAsync();
         }
@@ -34,7 +34,7 @@ namespace API.Data
             return movie;
         }
 
-        public async Task<IEnumerable<ReleasedMovie>> GetReleasedMovies()
+        public async Task<List<ReleasedMovie>> GetReleasedMovies()
         {
             return await context.ReleasedMovie.ToListAsync();
         }

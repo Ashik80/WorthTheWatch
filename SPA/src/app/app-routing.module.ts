@@ -1,3 +1,6 @@
+import { WatchListResolver } from './_resolvers/watchlist.resolver';
+import { WatchlistComponent } from './watchlist/watchlist.component';
+import { UserGuard } from './_guards/user.guard';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { UnreleasedMoviesComponent } from './unreleased-movie/unreleased-movies/unreleased-movies.component';
 import { UnreleasedMovieDetailedResolver } from './_resolvers/unreleased-movie-detailed.resolver';
@@ -25,7 +28,7 @@ const routes: Routes = [
   },
   {
     path: 'unreleased-movies', component: UnreleasedMoviesComponent,
-    resolve: {movies: UnreleasedMovieListResolver}
+    resolve: { movies: UnreleasedMovieListResolver }
   },
   {
     path: 'unreleased-movie/:id', component: MovieDetailedComponent,
@@ -35,6 +38,13 @@ const routes: Routes = [
   },
   {
     path: 'sign-in', component: SignupPageComponent
+  },
+  {
+    path: 'watchlist', component: WatchlistComponent,
+    runGuardsAndResolvers: 'always', canActivate: [UserGuard],
+    resolve: {
+      movies: WatchListResolver
+    }
   },
   {
     path: '**', redirectTo: '', pathMatch: 'full'

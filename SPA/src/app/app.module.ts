@@ -1,4 +1,4 @@
-import { ErrorInterceptorProvider } from './_guards/error.interceptor';
+import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { SignupFormComponent } from './signup-page/signup-form/signup-form.component';
 import { SigninFormComponent } from './signup-page/signin-form/signin-form.component';
 import { UnreleasedTrailerCardComponent } from './unreleased-movie/unreleased-trailer-card/unreleased-trailer-card.component';
@@ -30,6 +30,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { JwtModule } from '@auth0/angular-jwt';
 import { getToken } from './_services/user.service';
+import { WatchlistComponent } from './watchlist/watchlist.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { getToken } from './_services/user.service';
     FooterComponent,
     SignupPageComponent,
     SigninFormComponent,
-    SignupFormComponent
+    SignupFormComponent,
+    WatchlistComponent
   ],
   imports: [
     BrowserModule,
@@ -58,13 +60,13 @@ import { getToken } from './_services/user.service';
     CollapseModule.forRoot(),
     CarouselModule.forRoot(),
     FontAwesomeModule,
-    FormsModule
-    // JwtModule.forRoot({
-    //   config: {
-    //     tokenGetter: getToken,
-    //     allowedDomains: ['localhost:5000']
-    //   }
-    // })
+    FormsModule,
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: getToken,
+        allowedDomains: ['localhost:5000']
+      }
+    })
   ],
   providers: [
     MovieService,

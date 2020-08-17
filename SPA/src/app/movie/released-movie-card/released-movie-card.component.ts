@@ -1,3 +1,5 @@
+import { AlertifyService } from './../../_services/alertify.service';
+import { WatchlistService } from './../../_services/watchlist.service';
 import { Component, OnInit, Input } from '@angular/core';
 import { ReleasedMovie } from 'src/app/_models/movie';
 import { faStar, faPlus } from '@fortawesome/free-solid-svg-icons';
@@ -12,9 +14,17 @@ export class ReleasedMovieCardComponent implements OnInit {
   faStar = faStar;
   faPlus = faPlus;
 
-  constructor() { }
+  constructor(private watchlistServie: WatchlistService, private alertify: AlertifyService) { }
 
   ngOnInit(): void {
+  }
+
+  addToWatchlist(id: number): void {
+    this.watchlistServie.addToWatchList(id).subscribe(() => {
+      this.alertify.success('Added');
+    }, error => {
+      this.alertify.error(error);
+    });
   }
 
 }

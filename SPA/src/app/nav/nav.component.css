@@ -9,3 +9,7 @@
         transition: all 0.5s;
     }
 }
+
+.nav-item {
+    cursor: pointer;
+}

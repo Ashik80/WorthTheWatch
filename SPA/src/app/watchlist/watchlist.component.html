@@ -1,0 +1,35 @@
+<div class="container mt-3 watchlist">
+  <div class="card bg-primary">
+    <div class="card-header">
+      <h1 class="text-warning">Your Watchlist</h1>
+      <p class="text-muted"><i class="fas fa-lock"></i> Private</p>
+    </div>
+    <div class="card-body">
+      <p class="text-muted">{{movies.length}} title</p>
+      <div class="card bg-dark mb-2" *ngFor="let movie of movies">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-2">
+              <img [src]="movie.thumbNail" alt="" width="100%">
+            </div>
+            <div class="col-md-10">
+              <div class="watchlist-header">
+                <h4 class="card-title movie-name">{{movie.name}}</h4>
+                <button class="transparent-btn" (click)="removeMovie(movie.id)">
+                  <i class="fas fa-trash text-danger"></i>
+                </button>
+              </div>
+              <p class="text-muted">
+                <span *ngIf="movie.pgRating != null"><small>{{movie.pgRating}}</small> | </span>
+                <small>{{movie.duration}}</small> | <small>{{movie.genre}}</small> |
+                <small>{{movie.releaseInfo}}</small>
+              </p>
+              <p class="text-white"><i class="fas fa-star" style="color: yellow;"></i> {{movie.rating.toFixed(1)}}</p>
+              <p class="text-white">{{movie.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
